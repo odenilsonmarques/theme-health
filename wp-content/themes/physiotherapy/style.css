@@ -1,0 +1,22 @@
+/*
+Theme Name: physiotherapy
+Theme URI: http://localhost:8170/
+Author: Odenilson Marques
+Author URI: http://localhost:8170/
+Description: This theme is for learning purposes only.
+Requires at least: 5.6
+Tested up to: 5.9
+Requires PHP: 8.0
+Version: 1.0
+Text Domain: wp-physioterapy
+Tags: one-column, custom-menu, custom-logo, featured-images, translation-ready
+*/
+
+body{
+    /* background-color: black; */
+}
+
+a.name-physio{
+    text-decoration: none;
+    font-size: 25px;
+}
