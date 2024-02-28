@@ -22,6 +22,12 @@ function physioterapy_config()
         'flex-with' => true
 
     ));
+
+    register_nav_menus(
+        array(
+            'phyfio_main_menu' => 'Main Menu'
+        )
+    );
 }
 
 add_action('after_setup_theme', 'physioterapy_config', 0);
