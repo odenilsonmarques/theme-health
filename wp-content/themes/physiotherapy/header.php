@@ -18,8 +18,8 @@
                         the_custom_logo();
                     } else {
                     ?>
-                        <a href="<?php echo home_url('/');?>" class="name-physio">Bianca Reis</a>
-                    <?php  
+                        <a href="<?php echo home_url('/'); ?>" class="name-physio">Bianca Reis</a>
+                    <?php
                     }
                     ?>
                 </a>
@@ -28,23 +28,16 @@
                 </button>
 
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                    <ul class="navbar-nav ms-auto">
-                        <li class="nav-item active">
-                            <a class="nav-link" href="#">Início</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#sobre">Sobre</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#servicos">Serviços</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#blog">Blog</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#contato">Contato</a>
-                        </li>
-                    </ul>
+                    <?php
+                    wp_nav_menu(array(
+                        'theme_location' => 'phyfio_main_menu',
+                        'container' => 'ul',
+                        'container_class' => 'navbar-nav ms-lg-auto',
+                        'menu_class' => 'navbar-nav ms-lg-auto',
+                        'fallback_cb' => '__return_false',
+                        'items_wrap' => '<ul id="%1$s" class="%2$s">%3$s</ul>',
+                    ));
+                    ?>
                 </div>
             </div>
         </nav>
