@@ -21,11 +21,15 @@
   <div class="container">
     <h2 class="text-center">Sobre mim</h2>
     <div class="row justify-content-center mt-5">
-      <div class="col-md-5 text-center">
-        <h3>Dr. Bianca Maria</h3>
-        <p class="text-left">Olá! Meu nome é Dr. Bianca Maria. Sou um médico dedicado a fornecer cuidados de saúde excepcionais para minha comunidade. Com anos de experiência e um compromisso com a excelência, estou aqui para ajudar a melhorar a vida de meus pacientes.</p>
+      <div class="col-md-5" style="border: none">
+        <h3 class="text-center">Dr. Bianca Maria</h3>
+        <p class="teste">
+          Olá! Sou uma médica dedicada a fornecer cuidados de saúde excepcionais para minha
+          comunidade. Com anos de experiência e um compromisso com a excelência, estou aqui para ajudar a melhorar a vida
+          de meus pacientes.
+        </p>
       </div>
-      <div class="col-md-5 text-center">
+      <div class="col-md-5 text-center" style="border: none">
         <h3>Formação</h3>
         <ul class="list-inline">
           <li>
@@ -54,14 +58,12 @@
   </div>
 </section>
 
-
-
 <!-- Serviços -->
 <section id="servicos" class=" py-5">
   <div class="container">
     <h2 class="text-center">Nossos Serviços</h2>
     <div class="row mt-5">
-      <div class="col-md-4 widget-image">
+      <div class="col-md-4 widget-image text-center">
         <!-- <h3>Serviço 1</h3>
         <p>Descrição do serviço 1...</p> -->
         <?php
@@ -70,7 +72,7 @@
         }
         ?>
       </div>
-      <div class="col-md-4 widget-image">
+      <div class="col-md-4 widget-image text-center">
         <!-- <h3>Serviço 2</h3>
         <p>Descrição do serviço 2...</p> -->
         <?php
@@ -79,7 +81,7 @@
         }
         ?>
       </div>
-      <div class="col-md-4 widget-image">
+      <div class="col-md-4 widget-image text-center">
         <!-- <h3>Serviço 3</h3>
         <p>Descrição do serviço 3...</p> -->
         <?php
