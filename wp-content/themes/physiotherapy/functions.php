@@ -31,3 +31,48 @@ function physioterapy_config()
 }
 
 add_action('after_setup_theme', 'physioterapy_config', 0);
+
+
+
+function physioterapy_sidebars()
+{
+    register_sidebar(
+        array(
+            'name' => 'Fisrt service', //aqui é o titulo do sidebar
+            'id' => 'fisrt-service', //aqui definimos uma valor
+            'description' => 'first service area',
+            //os argumento abaixo referem-se a apresentação de cada widgets individualmente no front end
+            'before_widget' => '<div class="widget-wrapper">',
+            'after_widget' => '</div>',
+            'before_title' => '<h4 class="widgte-title">',
+            'after_title' => '</h4>'
+        )
+    );
+
+    register_sidebar(
+        array(
+            'name' => 'Second service', //aqui é o titulo do sidebar
+            'id' => 'second-service', //aqui definimos uma valor
+            'description' => 'second service area',
+            //os argumento abaixo referem-se a apresentação de cada widgets individualmente no front end
+            'before_widget' => '<div class="widget-wrapper">',
+            'after_widget' => '</div>',
+            'before_title' => '<h4 class="widgte-title">',
+            'after_title' => '</h4>'
+        )
+    );
+
+    register_sidebar(
+        array(
+            'name' => 'Third service', //aqui é o titulo do sidebar
+            'id' => 'third-service', //aqui definimos uma valor
+            'description' => 'third service area',
+            //os argumento abaixo referem-se a apresentação de cada widgets individualmente no front end
+            'before_widget' => '<div class="widget-wrapper">',
+            'after_widget' => '</div>',
+            'before_title' => '<h4 class="widgte-title">',
+            'after_title' => '</h4>'
+        )
+    );
+}
+add_action('widgets_init', 'physioterapy_sidebars');

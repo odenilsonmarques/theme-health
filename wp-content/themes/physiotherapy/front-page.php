@@ -16,39 +16,78 @@
   </div>
 </section>
 
-<!-- Sobre a Fisioterapeuta -->
-<section id="sobre">
+<!-- Sobre -->
+<section class="bg-light py-5">
   <div class="container">
-    <div class="row">
-      <div class="col-md-6">
-        <img src="fisioterapeuta.jpg" class="img-fluid" alt="Foto da Fisioterapeuta">
+    <h2 class="text-center">Sobre mim</h2>
+    <div class="row justify-content-center mt-5">
+      <div class="col-md-5 text-center">
+        <h3>Dr. Bianca Maria</h3>
+        <p class="text-left">Olá! Meu nome é Dr. Bianca Maria. Sou um médico dedicado a fornecer cuidados de saúde excepcionais para minha comunidade. Com anos de experiência e um compromisso com a excelência, estou aqui para ajudar a melhorar a vida de meus pacientes.</p>
       </div>
-      <div class="col-md-6">
-        <h2>Sobre a Fisioterapeuta</h2>
-        <p>Breve biografia da fisioterapeuta...</p>
-        <p>Certificações e especializações...</p>
-        <p>Missão e valores profissionais...</p>
+      <div class="col-md-5 text-center">
+        <h3>Formação</h3>
+        <ul class="list-inline">
+          <li>
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-check-lg my-2" viewBox="0 0 16 16">
+              <path d="M12.736 3.97a.733.733 0 0 1 1.047 0c.286.289.29.756.01 1.05L7.88 12.01a.733.733 0 0 1-1.065.02L3.217 8.384a.757.757 0 0 1 0-1.06.733.733 0 0 1 1.047 0l3.052 3.093 5.4-6.425z" />
+            </svg><span class="icon-itens">Graduação em pisioterapia pela UFMA</span>
+          </li>
+          <li>
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-check-lg my-2" viewBox="0 0 16 16">
+              <path d="M12.736 3.97a.733.733 0 0 1 1.047 0c.286.289.29.756.01 1.05L7.88 12.01a.733.733 0 0 1-1.065.02L3.217 8.384a.757.757 0 0 1 0-1.06.733.733 0 0 1 1.047 0l3.052 3.093 5.4-6.425z" />
+            </svg><span class="icon-itens">Especialização em Cardiologia Clínica</span>
+          </li>
+          <li>
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-check-lg my-2" viewBox="0 0 16 16">
+              <path d="M12.736 3.97a.733.733 0 0 1 1.047 0c.286.289.29.756.01 1.05L7.88 12.01a.733.733 0 0 1-1.065.02L3.217 8.384a.757.757 0 0 1 0-1.06.733.733 0 0 1 1.047 0l3.052 3.093 5.4-6.425z" />
+            </svg><span class="icon-itens">Membro da Sociedade de Cardiologia</span>
+          </li>
+          <li>
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-check-lg" viewBox="0 0 16 16">
+              <path d="M12.736 3.97a.733.733 0 0 1 1.047 0c.286.289.29.756.01 1.05L7.88 12.01a.733.733 0 0 1-1.065.02L3.217 8.384a.757.757 0 0 1 0-1.06.733.733 0 0 1 1.047 0l3.052 3.093 5.4-6.425z" />
+            </svg><span class="icon-itens">Participação em diversos congressos</span>
+          </li>
+        </ul>
       </div>
     </div>
   </div>
 </section>
 
+
+
 <!-- Serviços -->
-<section id="servicos" class="bg-light py-5">
+<section id="servicos" class=" py-5">
   <div class="container">
     <h2 class="text-center">Nossos Serviços</h2>
-    <div class="row">
-      <div class="col-md-4">
-        <h3>Serviço 1</h3>
-        <p>Descrição do serviço 1...</p>
+    <div class="row mt-5">
+      <div class="col-md-4 widget-image">
+        <!-- <h3>Serviço 1</h3>
+        <p>Descrição do serviço 1...</p> -->
+        <?php
+        if (is_active_sidebar('fisrt-service')) {
+          dynamic_sidebar('fisrt-service');
+        }
+        ?>
       </div>
-      <div class="col-md-4">
-        <h3>Serviço 2</h3>
-        <p>Descrição do serviço 2...</p>
+      <div class="col-md-4 widget-image">
+        <!-- <h3>Serviço 2</h3>
+        <p>Descrição do serviço 2...</p> -->
+        <?php
+        if (is_active_sidebar('second-service')) {
+          dynamic_sidebar('second-service');
+        }
+        ?>
       </div>
-      <div class="col-md-4">
-        <h3>Serviço 3</h3>
-        <p>Descrição do serviço 3...</p>
+      <div class="col-md-4 widget-image">
+        <!-- <h3>Serviço 3</h3>
+        <p>Descrição do serviço 3...</p> -->
+        <?php
+        if (is_active_sidebar('third-service')) {
+          dynamic_sidebar('third-service');
+        }
+
+        ?>
       </div>
     </div>
   </div>

@@ -46,9 +46,6 @@ li a:hover {
     text-align: center;
 }
 
-.hero-items{
-    /* border: 1px solid red; */
-}
 
 
 #hero .hero-items h1{
@@ -56,4 +53,23 @@ li a:hover {
     font-weight: bold;
     font-size: 40px;
     float: left;
+}
+
+.widget-image img {
+    width: 100%; /* Define a largura das imagens como 100% para que elas preencham a largura do contêiner */
+    height: auto; /* Mantém a proporção da imagem */
+    max-width: 300px; /* Define uma largura máxima para as imagens */
+    border-radius: 5px;
+}
+
+#servicos p{
+    padding: 10px;
+}
+
+.list-inline li {
+    margin-bottom: 10px; /* Ajuste o valor conforme necessário */
+  }
+
+.icon-itens{
+    margin-left: 5px;
 }
