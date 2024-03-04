@@ -23,7 +23,7 @@
     <div class="row justify-content-center mt-5">
       <div class="col-md-5" style="border: none">
         <h3 class="text-center">Dr. Bianca Maria</h3>
-        <p class="teste">
+        <p class="about-paragraph">
           Olá! Sou uma médica dedicada a fornecer cuidados de saúde excepcionais para minha
           comunidade. Com anos de experiência e um compromisso com a excelência, estou aqui para ajudar a melhorar a vida
           de meus pacientes.
@@ -62,8 +62,8 @@
 <section id="servicos" class=" py-5">
   <div class="container">
     <h2 class="text-center">Nossos Serviços</h2>
-    <div class="row mt-5">
-      <div class="col-md-4 widget-image text-center">
+    <div class="row mt-5 text-center">
+      <div class="col-md-4 widget-image">
         <!-- <h3>Serviço 1</h3>
         <p>Descrição do serviço 1...</p> -->
         <?php
@@ -72,7 +72,7 @@
         }
         ?>
       </div>
-      <div class="col-md-4 widget-image text-center">
+      <div class="col-md-4 widget-image">
         <!-- <h3>Serviço 2</h3>
         <p>Descrição do serviço 2...</p> -->
         <?php
@@ -81,7 +81,7 @@
         }
         ?>
       </div>
-      <div class="col-md-4 widget-image text-center">
+      <div class="col-md-4 widget-image">
         <!-- <h3>Serviço 3</h3>
         <p>Descrição do serviço 3...</p> -->
         <?php
@@ -96,30 +96,30 @@
 </section>
 
 <!-- Testemunhos/Depoimentos -->
-<section id="depoimentos" class="py-5">
+<section id="depoimentos" class="bg-light py-5">
   <div class="container">
     <h2 class="text-center">Depoimentos de Clientes</h2>
-    <div class="row">
-      <div class="col-md-4">
-        <div class="card">
-          <div class="card-body">
-            <p>Depoimento de cliente 1...</p>
-          </div>
-        </div>
+    <div class="row mt-5 text-center">
+      <div class="col-md-4 widget-image-testimony">
+        <?php
+        if (is_active_sidebar('first-testimony')) {
+          dynamic_sidebar('first-testimony');
+        }
+        ?>
       </div>
-      <div class="col-md-4">
-        <div class="card">
-          <div class="card-body">
-            <p>Depoimento de cliente 2...</p>
-          </div>
-        </div>
+      <div class="col-md-4 widget-image-testimony">
+        <?php
+        if (is_active_sidebar('second-testimony')) {
+          dynamic_sidebar('second-testimony');
+        }
+        ?>
       </div>
-      <div class="col-md-4">
-        <div class="card">
-          <div class="card-body">
-            <p>Depoimento de cliente 3...</p>
-          </div>
-        </div>
+      <div class="col-md-4 widget-image-testimony">
+        <?php
+        if (is_active_sidebar('third-testimony')) {
+          dynamic_sidebar('third-testimony');
+        }
+        ?>
       </div>
     </div>
   </div>

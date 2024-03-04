@@ -74,5 +74,44 @@ function physioterapy_sidebars()
             'after_title' => '</h4>'
         )
     );
+
+    register_sidebar(
+        array(
+            'name' => 'First testimony', //aqui é o titulo do sidebar
+            'id' => 'first-testimony', //aqui definimos uma valor
+            'description' => 'first testimony area',
+            //os argumento abaixo referem-se a apresentação de cada widgets individualmente no front end
+            'before_widget' => '<div class="widget-wrapper">',
+            'after_widget' => '</div>',
+            'before_title' => '<h4 class="widgte-title">',
+            'after_title' => '</h4>'
+        )
+    );
+
+    register_sidebar(
+        array(
+            'name' => 'Second testimony', //aqui é o titulo do sidebar
+            'id' => 'second-testimony', //aqui definimos uma valor
+            'description' => 'second testimony area',
+            //os argumento abaixo referem-se a apresentação de cada widgets individualmente no front end
+            'before_widget' => '<div class="widget-wrapper">',
+            'after_widget' => '</div>',
+            'before_title' => '<h4 class="widgte-title">',
+            'after_title' => '</h4>'
+        )
+    );
+
+    register_sidebar(
+        array(
+            'name' => 'Third testimony', //aqui é o titulo do sidebar
+            'id' => 'third-testimony', //aqui definimos uma valor
+            'description' => 'third testimony area',
+            //os argumento abaixo referem-se a apresentação de cada widgets individualmente no front end
+            'before_widget' => '<div class="widget-wrapper">',
+            'after_widget' => '</div>',
+            'before_title' => '<h4 class="widgte-title">',
+            'after_title' => '</h4>'
+        )
+    );
 }
 add_action('widgets_init', 'physioterapy_sidebars');

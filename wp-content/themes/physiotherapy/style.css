@@ -74,6 +74,13 @@ li a:hover {
     margin-left: 5px;
 }
 
-.teste{
+.about-paragraph{
     text-align: justify;
+}
+
+.widget-image-testimony img{
+    width: 100%; /* Define a largura das imagens como 100% para que elas preencham a largura do contêiner */
+    height: auto; /* Mantém a proporção da imagem */
+    max-width: 200px; /* Define uma largura máxima para as imagens */
+    border-radius: 100px;
 }
