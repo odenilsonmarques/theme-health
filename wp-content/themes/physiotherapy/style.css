@@ -21,11 +21,11 @@ a.name-physio{
     font-size: 25px;
 }
 
-li {
+/* li {
     list-style: none;
     display: inline-block;
     margin-right: 0px;
-}
+} */
 
 li a {
     text-decoration: none;
@@ -83,4 +83,10 @@ li a:hover {
     height: auto; /* Mantém a proporção da imagem */
     max-width: 200px; /* Define uma largura máxima para as imagens */
     border-radius: 100px;
+}
+
+.list-unstyled li a{
+    margin-left: 2px;
+
+    color: #fff;
 }

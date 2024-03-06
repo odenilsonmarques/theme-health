@@ -98,7 +98,7 @@
 <!-- Testemunhos/Depoimentos -->
 <section id="depoimentos" class="bg-light py-5">
   <div class="container">
-    <h2 class="text-center">Depoimentos de Clientes</h2>
+    <h2 class="text-center">Depoimentos</h2>
     <div class="row mt-5 text-center">
       <div class="col-md-4 widget-image-testimony">
         <?php
