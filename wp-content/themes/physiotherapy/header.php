@@ -10,7 +10,7 @@
 
 <body <?php body_class(); ?>>
     <header>
-        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top py-3">
             <div class="container">
                 <a class="navbar-brand" href="#">
                     <?php

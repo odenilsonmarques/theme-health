@@ -21,6 +21,13 @@ a.name-physio{
     font-size: 25px;
 }
 
+
+header nav{
+    /* border:1px solid red; */
+    padding-top: 30px;
+    margin-top: 30px;
+}
+
 /* li {
     list-style: none;
     display: inline-block;
@@ -33,6 +40,7 @@ li a {
     transition: .5s;
     font-size: 16px;
     margin-left: 20px;
+    /* border: 1px solid red; */
 }
 
 li a:hover {
@@ -44,9 +52,23 @@ li a:hover {
    
     background-position: center center;
     text-align: center;
+    padding-top: 100px;
 }
 
+#sobre{
+    padding-top:70px ;
+    padding-bottom: 70px;
+}
 
+#servicos{
+    padding-top:70px ;
+    padding-bottom: 70px;
+}
+
+#depoimentos{
+    padding-top:70px ;
+    padding-bottom: 70px;
+}
 
 #hero .hero-items h1{
     margin-top: 0;

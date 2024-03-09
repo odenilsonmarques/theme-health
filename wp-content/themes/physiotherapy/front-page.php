@@ -17,7 +17,7 @@
 </section>
 
 <!-- Sobre -->
-<section class="bg-light py-5">
+<section id="sobre" class="bg-light ">
   <div class="container">
     <h2 class="text-center">Sobre mim</h2>
     <div class="row justify-content-center mt-5">
@@ -59,7 +59,7 @@
 </section>
 
 <!-- Serviços -->
-<section id="servicos" class=" py-5">
+<section id="servicos">
   <div class="container">
     <h2 class="text-center">Nossos Serviços</h2>
     <div class="row mt-5 text-center">
