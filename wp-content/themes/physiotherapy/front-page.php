@@ -7,7 +7,7 @@
     <div class="hero-items row align-items-center">
       <div class="col-md-6">
         <h1>Bem-vindo ao Mundo do Bem-Estar</h1>
-        <p>Encontre Equilíbrio e Vitalidade com a Nossa Fisioterapeuta.</p>
+        <p class="mt-4">Encontre Equilíbrio e Vitalidade com a Nossa Fisioterapeuta.</p>
       </div>
       <div class="col-md-6">
         <img src="http://localhost:8170/wp-content/uploads/2024/02/jb.png" class="img-fluid" alt="Imagem" width="350">

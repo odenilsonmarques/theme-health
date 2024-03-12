@@ -28,6 +28,9 @@ function physioterapy_config()
             'phyfio_main_menu' => 'Main Menu'
         )
     );
+
+    //add suport a thumbnails
+    add_theme_support('post-thumbnails');
 }
 
 add_action('after_setup_theme', 'physioterapy_config', 0);
