@@ -23,10 +23,6 @@
                             </figcaption>
                         </figure>
                     </div>
-
-
-
-
                     <div class="col-md-6 content">
                         <h2 class="text-center mb-5"><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h2>
 
