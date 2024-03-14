@@ -3,13 +3,32 @@
 <section id="all-posts">
     <div class="container">
         <div class="row">
+            <h1 class="text-center">Bem - vindo(a) ao meu blog</h1>
             <?php if (have_posts()) : while (have_posts()) : the_post(); ?>
                     <div class="col-md-6">
-                        <?php the_post_thumbnail('large', array('class' => 'img-fluid', 'style' => 'height: 300px; width: 100%; border-radius: 10px')); ?>
-                        <p><?php the_category(); ?></p>
+                        <figure class="figure mb-5">
+
+                            <?php the_post_thumbnail('large', array('class' => 'img-fluid', 'style' => 'height: 300px; width: 100%; border-radius: 10px')); ?>
+
+                            <figcaption class="figure-caption mt-3">Categorias:
+                                <?php
+                                // outra maneira de exibir as catewgorias usando um foreach
+                                $categories = get_the_category();
+                                if ($categories) {
+                                    foreach ($categories as $category) {
+                                        echo '<a href="' . esc_url(get_category_link($category->term_id)) . '">' . esc_html($category->name) . '</a>, ';
+                                    }
+                                }
+                                ?>
+                            </figcaption>
+                        </figure>
                     </div>
+
+
+
+
                     <div class="col-md-6 content">
-                        <h1 class="text-center"><?php the_title(); ?></h1>
+                        <h2 class="text-center mb-5"><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h2>
 
                         <p class="atributted text-center">
                             <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-person" viewBox="2 1 16 16">
