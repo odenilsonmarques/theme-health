@@ -8,6 +8,7 @@
       <div class="col-md-6">
         <h1>Bem-vindo ao Mundo do Bem-Estar</h1>
         <p class="mt-4">Encontre Equilíbrio e Vitalidade com a Nossa Fisioterapeuta.</p>
+        <button class="btn btn btn-outline-secondary mt-3  contact-us">Fale conosco</button>
       </div>
       <div class="col-md-6">
         <img src="http://localhost:8170/wp-content/uploads/2024/02/jb.png" class="img-fluid" alt="Imagem" width="350">
@@ -63,7 +64,7 @@
   <div class="container">
     <h2 class="text-center">Nossos Serviços</h2>
     <div class="row mt-5 text-center">
-      <div class="col-md-4 widget-image">
+      <div class="col-md-4 widget-image shadow p-3 mb-5 bg-body rounded">
         <!-- <h3>Serviço 1</h3>
         <p>Descrição do serviço 1...</p> -->
         <?php
@@ -72,7 +73,7 @@
         }
         ?>
       </div>
-      <div class="col-md-4 widget-image">
+      <div class="col-md-4 widget-image shadow p-3 mb-5 bg-body rounded"">
         <!-- <h3>Serviço 2</h3>
         <p>Descrição do serviço 2...</p> -->
         <?php
@@ -81,7 +82,7 @@
         }
         ?>
       </div>
-      <div class="col-md-4 widget-image">
+      <div class="col-md-4 widget-image shadow p-3 mb-5 bg-body rounded"">
         <!-- <h3>Serviço 3</h3>
         <p>Descrição do serviço 3...</p> -->
         <?php
