@@ -49,6 +49,7 @@ li a {
 
 li a:hover {
     opacity: .5;
+    text-decoration: underline;
 } 
 
 
@@ -129,7 +130,8 @@ li a:hover {
 .list-unstyled li a{
     margin-left: 2px;
 
-    color: #fff;
+    color: #c9ced7;
+    font-size: 15px;
 }
 
 #all-posts{
@@ -160,11 +162,14 @@ li a:hover {
     text-decoration: none;
     margin-top: 20px;
     margin-bottom: 60px;
+    color:#295FA6;
 }
+
 
 #all-posts h2 a{
     font-size: 25px;
     text-decoration: none;
+    color: #7997ad ;
 }
 
 #all-posts .content{
@@ -217,7 +222,7 @@ a.content-post{
     color: #0D0D0D;
 }
 
-.hero-items button{
+.hero-items .contact-us{
     background-color:  #295FA6;
     color:#fff;
     font-weight: bold;
@@ -235,4 +240,8 @@ footer{
 h3, h4, h5{
     color: 
     #7997ad;
+}
+
+#contatos h5{
+    color:#fff;
 }
