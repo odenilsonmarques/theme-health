@@ -58,6 +58,7 @@ li a:hover {
     background-position: center center;
     text-align: center;
     padding-top: 100px;
+    animation: fadeInLeft 2s;
 }
 
 #sobre{
@@ -244,4 +245,26 @@ h3, h4, h5{
 
 #contatos h5{
     color:#fff;
+}
+
+.company{
+    font-size: 14px;    
+    color:#7997ad;
+}
+
+/* css padão para aplicação do efeito de transação */
+@keyframes fadeInLeft
+{
+  0%{
+      opacity:0;
+      /* translateX reposiciona um elemento na direção horizontal e/ou vertical */
+      -webkit-transform:translateX(-100px); 
+      -ms-transform:translateX(-100px);
+      transform:translateX(-100px)}
+  100%{
+      opacity:1;
+      -webkit-transform:translateX(0);
+      -ms-transform:translateX(0);
+      transform:translateX(0)
+  }
 }
