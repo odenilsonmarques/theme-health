@@ -6,7 +6,7 @@
                 <h5>Contato</h5>
                 <ul class="list-unstyled">
                     <li><a href="#"> Endereço: Rua Tal, 123 - Cidade, Estado</a></li>
-                    <li class="py-3"><a href="#">Email: contato@fisioterapeuta.com<< /a>
+                    <li class="py-3"><a href="#">Email: contato@fisioterapeuta.com</a>
                     </li>
                     <li><a href="#">Telefone: (00) 1234-5678</a></li>
                 </ul>
@@ -32,7 +32,8 @@
 
         <div class="row">
             <div class="col-md-12">
-                <p class="text-center mt-5">&copy; <?php echo date('Y');?> Bianca Maria. Todos os direitos reservados.</p>
+                <p class="text-center mt-5">&copy; <?php echo date('Y'); ?> <?php echo get_theme_mod('set_copyright', 'Copyright X - All Rights Reserved'); ?></p>
+
                 <p class="text-center mt-2 company">Desenvolvido por 2ps</p>
             </div>
         </div>

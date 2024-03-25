@@ -1,5 +1,8 @@
 <?php
 
+require get_template_directory().'/inc/customizer.php';
+
+
 function physioterapy_load_script()
 {
     wp_enqueue_style('physioterapy-style', get_stylesheet_uri(), array(), 1.0, 'all');
