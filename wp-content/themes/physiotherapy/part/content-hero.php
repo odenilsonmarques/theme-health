@@ -1,9 +1,16 @@
 <div class="col-md-6">
-    <h1>Bem-vindo ao Mundo do Bem-Estar</h1>
-    <p class="mt-4">Encontre equilíbrio e vitalidade com a nossa fisioterapeuta.</p>
+    <?php
+      $hero_title = get_theme_mod('set_hero_title', 'Please, type some title');
+      $hero_subtitle = get_theme_mod('set_hero_subtitle', 'Please, type some subtitle');
+      $hero_button_text = get_theme_mod( 'set_hero_button_text', 'Learn More' );
+      $hero_button_link = get_theme_mod( 'set_hero_button_link', '#' );
+      $hero_img = wp_get_attachment_url( get_theme_mod( 'set_hero_img' ) );
+    ?>
+    <h1><?php echo $hero_title ?></h1>
+    <p class="mt-4"><?php echo $hero_subtitle ?></p>
 
-    <a class="btn btn-primary contact-us mt-3" href="https://wa.me/5598981061009" role="button" target="_blank">Fale conosco</a>
+    <a class="btn btn-primary contact-us mt-3" href="<?php echo $hero_button_link?>"  target="_blank"><?php echo $hero_button_text ?></a>
 </div>
 <div class="col-md-6">
-    <img src="http://localhost:8170/wp-content/uploads/2024/02/jb.png" class="img-fluid" alt="Imagem" width="350">
+    <img src="<?php echo $hero_img?>" class="img-fluid" alt="Imagem" width="350">
 </div>
