@@ -252,6 +252,10 @@ h3, h4, h5{
     color:#7997ad;
 }
 
+.subtitles{
+    margin-bottom: 70px;
+}
+
 /* css padão para aplicação do efeito de transação */
 @keyframes fadeInLeft
 {

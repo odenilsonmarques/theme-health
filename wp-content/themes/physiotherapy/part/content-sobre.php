@@ -1,6 +1,7 @@
-<div class="row justify-content-center mt-5">
-    <div class="col-md-5" style="border: none">
-        <h3 class="text-center">Dr. Bianca Maria</h3>
+<div class="row justify-content-center">
+    <h2 class="text-center subtitles"><?php echo get_theme_mod('set_about_title', 'please, add some title') ?></h2>
+    <div class="col-md-5">
+        <h3 class="text-center"><?php echo get_theme_mod('set_about_subtitle_name', 'please, add some subtitle') ?></h3>
         <p class="about-paragraph">
             Olá! Sou uma médica dedicada a fornecer cuidados de saúde excepcionais para minha
             comunidade. Com anos de experiência e um compromisso com a excelência, estou aqui para ajudar a melhorar a vida
@@ -8,7 +9,7 @@
         </p>
     </div>
     <div class="col-md-5 text-center" style="border: none">
-        <h3>Formação</h3>
+        <h3><?php echo get_theme_mod('set_about_subtitle_training', 'please, add some subtitle') ?></h3>
         <ul class="list-inline">
             <li>
                 <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-check-lg my-2" viewBox="0 0 16 16">
