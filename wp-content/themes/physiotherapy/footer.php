@@ -12,7 +12,7 @@
                 </ul>
             </div>
             <div class="col-md-4">
-                <h5>Seviços</h5>
+                <h5>Serviços</h5>
                 <ul class="list-unstyled">
                     <li><a href="#">Acupuntura</a></li>
                     <li class="py-3"><a href="#">Fisioterapia Neurológica</a></li>
@@ -32,7 +32,7 @@
 
         <div class="row">
             <div class="col-md-12">
-                <p class="text-center mt-5">&copy; <?php echo date('Y'); ?> <?php echo get_theme_mod('set_copyright', 'Copyright X - All Rights Reserved'); ?></p>
+                <p class="text-center mt-5">&copy; <?php echo esc_html(date('Y')); ?> <?php echo esc_html(get_theme_mod('set_copyright', 'Copyright X - All Rights Reserved')); ?></p>
 
                 <p class="text-center mt-2 company">Desenvolvido por 2ps</p>
             </div>

@@ -256,6 +256,31 @@ h3, h4, h5{
     margin-bottom: 70px;
 }
 
+
+/* estilizando paginação */
+.pagination {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+    margin-bottom: 50px;
+}
+
+.pagination a {
+    margin: 0 5px;
+    padding: 5px 10px;
+    border: 1px solid #ccc;
+    text-decoration: none;
+}
+
+.pagination .current {
+    background-color: #0073e6;
+    color: #fff;
+    padding: 8px;
+}
+
+
+
+
 /* css padão para aplicação do efeito de transação */
 @keyframes fadeInLeft
 {

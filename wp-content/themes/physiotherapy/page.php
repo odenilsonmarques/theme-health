@@ -22,7 +22,7 @@
                                 </svg><?php the_date(); ?>
                             </span>
                             <?php
-                            $comments_number = get_comments_number();
+                            $comments_number = esc_html(get_comments_number());
                             ?>
                             <span class="post-date">
                                 <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-chat-left" viewBox="0 0 16 16">
@@ -31,7 +31,7 @@
                                 <?php echo $comments_number ? "$comments_number Comentários" : 'Sem comentários'; ?>
                             </span>
                         </p>
-                        <p><?php echo wp_trim_words(get_the_content(), 30, ' [...]'); ?> </p>
+                        <p><?php echo esc_html(wp_trim_words(get_the_content(), 30, ' [...]')); ?> </p>
                     </div>
                 <?php endwhile; ?>
             <?php else : ?>

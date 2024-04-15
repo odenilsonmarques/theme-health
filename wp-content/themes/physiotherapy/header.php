@@ -18,7 +18,7 @@
                         the_custom_logo();
                     } else {
                     ?>
-                        <a href="<?php echo home_url('/'); ?>" class="name-physio">Bianca Reis</a>
+                        <a href="<?php echo esc_html(home_url('/')); ?>" class="name-physio">Bianca Reis</a>
                     <?php
                     }
                     ?>

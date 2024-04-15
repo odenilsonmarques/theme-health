@@ -1,5 +1,5 @@
 <div class="row text-center">
-    <h2 class="text-center subtitles"><?php echo get_theme_mod('set_services_title', 'please, add some title') ?></h2>
+    <h2 class="text-center subtitles"><?php echo  esc_html(get_theme_mod('set_services_title', 'please, add some title')) ?></h2>
     <div class="col-md-4 widget-image shadow p-3 mb-5 bg-body rounded">
         <!-- <h3>Serviço 1</h3>
         <p>Descrição do serviço 1...</p> -->

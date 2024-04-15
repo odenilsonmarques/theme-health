@@ -17,10 +17,10 @@
                             </svg><?php the_date(); ?>
                         </span>
                         <?php
-                        $comments_number = get_comments_number();
+                        $comments_number = esc_html(get_comments_number());
                         ?>
                     </p>
-                    <p><?php echo wp_trim_words(get_the_content()); ?></p>
+                    <p><?php echo esc_html(wp_trim_words(get_the_content())); ?></p>
                 </div>
             <?php
                 // lógica para exibir ou nao os comentários
@@ -32,7 +32,6 @@
                 }
                 ?>
 <?php
-
 
             endwhile; ?>
         </div>
